@@ -1,15 +1,28 @@
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+# Core ML stack (PyTorch + TensorFlow)
+# CUDA-enabled torch wheels are selected by the +cu124 pins below.
+# Direct index URL: https://download.pytorch.org/whl/cu124
+torch==2.5.1+cu124
+torchvision==0.20.1+cu124
+torchaudio==2.5.1+cu124
+tensorflow==2.16.2
+
+# Numerics / data handling
 numpy==1.26.4
 pandas==2.2.3
 scikit-learn==1.5.2
+
+# Data sources / IO
+yfinance==0.2.54
+openpyxl>=3.1
+
+# Utilities
+tqdm==4.67.1
 matplotlib==3.9.2
 seaborn==0.13.2
-tqdm==4.67.1
-yfinance==0.2.54
+
+# Notebook tooling
 jupyter==1.1.1
 jupyterlab==4.3.4
 ipykernel==6.29.5
-tensorflow==2.16.2
-torch==2.5.1
-torchvision==0.20.1
-torchaudio==2.5.1
-xgboost==2.1.3
